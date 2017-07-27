@@ -128,8 +128,6 @@ fabric.properties
 *.class
 
 # Log file
-*.log
-
 # BlueJ files
 *.ctxt
 
