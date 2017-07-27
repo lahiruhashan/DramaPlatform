@@ -3,12 +3,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 
 /**
  * Created by Hashan on 7/17/2017.
@@ -27,7 +27,7 @@ public class Login extends HttpServlet {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/drama.lk", "root", "");
             System.out.println("connected");
         } catch (Exception ex) {
-            System.out.println(ex);
+            System.out.println("Database not connected");
         }
 
     }
@@ -45,20 +45,32 @@ public class Login extends HttpServlet {
             String query = "select * from user";
             rs = st.executeQuery(query);
 
-            while(rs.next()){
+            response.setContentType("text/plain");
+            response.setCharacterEncoding("UTF-8");
+
+            while(rs.next()) {
 
                 String un = rs.getString("username");
                 String pw = rs.getString("password");
 
-                if(username.equals(un) && password.equals(pw)){
-                    response.sendRedirect("welcome.jsp");
-                }
-                else{
-                    response.sendRedirect("index.jsp");
+
+                if (username.equals(un)) {
+                    if (password.equals(pw)) {
+
+                        HttpSession session = request.getSession();
+                        session.setAttribute("user", username);
+
+                        response.getWriter().write("match");
+                    }else{
+                        response.getWriter().write(username);
+                    }
+                } else {
+                    response.getWriter().write("none");
                 }
             }
+
         } catch (Exception ex) {
-            System.out.println("error");
+            System.out.println("DB Error" + ex);
         }
     }
 
