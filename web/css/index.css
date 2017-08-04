@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
-@import url('https://fonts.googleapis.com/css?family=Fresca');
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url("../fonts/fonts.css");
 
 * {
     margin: 0;
@@ -59,7 +56,7 @@ body{
 }
 
 .skew{
-    transform: skewX(20deg);
+  transform: skewX(20deg);
 }
 
 .signIn:hover {
@@ -91,87 +88,87 @@ body{
     height: 90vh;
     background: #001421;
 
-    background-size : cover;
+	background-size : cover;
     z-index: 0;
     transition: all 1.5s ease-in-out;
 
 }
 
 .content-left{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left:0;
-    top:0;
-    z-index:-1;
-    display: flex;
-    flex-direction:column;
-//background-color: pink;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+  display: flex;
+  flex-direction:column;
+  //background-color: pink;
 }
 
 .strip{
-    height: 350px;
-    width: 100%;
-    position: relative;
-    top: 18vh;
-    background: #141E3F;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  top: 18vh;
+  background: #141E3F;
 }
 
 .quote{
-    font-size: 45px;
-    color: white;
-    width: 84%;
-    position: relative;
-    height: 170px;
-    top: 20px;
-    left: 16%;
-    word-wrap: break-word;
-    font-family: 'Patua One', serif;
-//background: red;
+  font-size: 45px;
+  color: white;
+  width: 84%;
+  position: relative;
+  height: 170px;
+  top: 20px;
+  left: 16%;
+  word-wrap: break-word;
+  font-family: 'Patua One', serif;
+  //background: red;
 
 }
 
 .welcome-text{
-    font-size: 20px;
-    color: white;
-    position: relative;
-    height: 30px;
-    width: 84%;
-    top: 30px;
-    left: 16%;
-    font-family: 'quicksand', serif;
-//background: blue;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  height: 30px;
+  width: 84%;
+  top: 30px;
+  left: 16%;
+  font-family: 'quicksand', serif;
+  //background: blue;
 }
 
 .signUp{
-    background-color: yellow;
-    font-size: 100%;
-    color: black;
-    position: relative;
-    width: 100px;
-    height: 19px;
-    top:80px;
-    left: 16%;
-    text-align: center;
-    padding: 7px 3px;
-    font-family: 'Fira Sans', serif;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+  background-color: yellow;
+  font-size: 100%;
+  color: black;
+  position: relative;
+  width: 100px;
+  height: 19px;
+  top:80px;
+  left: 16%;
+  text-align: center;
+  padding: 7px 3px;
+  font-family: 'Fira Sans', serif;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
 }
 
 .signUp:hover{
-    cursor: pointer;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
 }
 
 .content-right{
-    width: 40vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right:0;
-    background-image: url("../resourses/background7.png");
-    background-repeat: no-repeat;
-//background-color:red;
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right:0;
+  background-image: url("../resourses/background7.png");
+  background-repeat: no-repeat;
+  //background-color:red;
 }
 
 .pageContent{
@@ -198,28 +195,28 @@ body{
 }
 
 .toggleWrapper{
-    width: 410px;
-    position: absolute;
-    top: 0px;
-    z-index: 1;
+  width: 410px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
 }
 
 .closeButton{
-    height: 50px;
-    width: 50px;
-    font-size: 30px;
-    color: white;
-    margin-top: 15px;
-    margin-right: 10px;
-    float: right;
-    transform: scale(1);
-    transition: all 0.8s ease-in-out;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: right;
+  transform: scale(1);
+  transition: all 0.8s ease-in-out;
 }
 
 .closeButton:hover{
-    opacity: 0.5;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .loginWrapper{
@@ -274,31 +271,31 @@ body{
 .loginDetail{
     width: 380px;
     height: 300px;
-//background-color: blue;
+    //background-color: blue;
 }
 
 .username-wrap{
-    height: auto;
-    width: auto;
-//background:red;
-    position: relative;
-    top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: auto;
+  width: auto;
+  //background:red;
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .password-wrap{
-    height: auto;
-    width: auto;
-//background:green;
-    position: relative;
-    top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: auto;
+  width: auto;
+  //background:green;
+  position: relative;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .username , .usernameInput{
@@ -308,116 +305,116 @@ body{
     margin-right: auto;
     position: relative;
     top: 0px;
-//border-radius: 5px;
+    //border-radius: 5px;
     background-color: #3A6D6E;
 }
 
 .username-notify{
-    position: absolute;
-    top: 50px;
-    height: 35px;
-    width:180px;
-    margin-left: -80px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    background: crimson;
-    z-index: 1
+  position: absolute;
+  top: 50px;
+  height: 35px;
+  width:180px;
+  margin-left: -80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: crimson;
+  z-index: 1
 
 }
 
 .username-notify::after{
-    top: -55%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(0, 151, 167, 0);
-    border-bottom-color:crimson;
-    border-width: 10px;
-    margin-left: -70px;
-    z-index: 1
+  top: -55%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 151, 167, 0);
+  border-bottom-color:crimson;
+  border-width: 10px;
+  margin-left: -70px;
+  z-index: 1
 }
 
 
 .password-notify{
-    position: absolute;
-    top: 50px;
-    height: 35px;
-    width:180px;
-    margin-left: -80px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    z-index: 1;
-    background: crimson;
-    transition: all .5s  ease-in-out;
+  position: absolute;
+  top: 50px;
+  height: 35px;
+  width:180px;
+  margin-left: -80px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  z-index: 1;
+  background: crimson;
+  transition: all .5s  ease-in-out;
 
 }
 
 
 .is-active{
-    display: flex;
-    -webkit-animation: note 800ms ease-in-out forwards;
-    -webkit-transform-origin: 35px 0px;
+  display: flex;
+   -webkit-animation: note 800ms ease-in-out forwards;
+   -webkit-transform-origin: 35px 0px;
 }
 
 @-webkit-keyframes note {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
-        transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
-    }
-    50% {
-        -webkit-transform: rotate(-10deg) rotateX(-2deg);
-        transform: rotate(-10deg) rotateX(-2deg);
-        opacity: 1;
-    }
-    70% {
-        -webkit-transform: rotate(3deg);
-        transform: rotate(3deg);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+            transform: scale(0.1) rotate(30deg) translateY(50px) rotateX(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg) rotateX(-2deg);
+            transform: rotate(-10deg) rotateX(-2deg);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 
 .password-notify::after{
-    top: -55%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(0, 151, 167, 0);
-    border-bottom-color:crimson;
-    border-width: 10px;
-    margin-left: -70px;
-    z-index: 1
+  top: -55%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 151, 167, 0);
+  border-bottom-color:crimson;
+  border-width: 10px;
+  margin-left: -70px;
+  z-index: 1
 }
 
 .text-invalid{
-    position: absolute;
-    font-size: 18px;
-    color: white;
-    font-family: 'Fira Sans';
-    z-index: 2;
-    transition: all .3s ease-in-out;
-    pointer-events: none;
+      position: absolute;
+      font-size: 18px;
+      color: white;
+      font-family: 'Fira Sans';
+      z-index: 2;
+      transition: all .3s ease-in-out;
+      pointer-events: none;
 }
 
 
 .passwordInput:focus , .usernameInput:focus{
-    outline-style:none;
+  outline-style:none;
 }
 
 .password , .passwordInput{
@@ -427,35 +424,20 @@ body{
     margin-right: auto;
     position: relative;
     top: 0px;
-//border-radius: 5px;
+    //border-radius: 5px;
     background-color: #396F6F;
 }
 
 .passwordInput , .usernameInput{
-    top: 0px;
-    width: 350px;
-    left: 10px;
-    border: None;
-    font-size: 18px;
-    text-overflow: clip;
-    font-family: 'Fira Sans', sans-serif;
-    color: white;
-
+  top: 0px;
+  width: 350px;
+  left: 10px;
+  border: None;
+  font-size: 18px;
+  text-overflow: clip;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
 }
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    -webkit-text-fill-color: white !important;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-
 
 input::-webkit-input-placeholder{
     color: #90AEAC;
@@ -492,11 +474,11 @@ input::-webkit-input-placeholder{
 
 
 #loginSection.showLog{
-    transform: translateX(0vw);
-    transition: transform 500ms ease-in-out;
+  transform: translateX(0vw);
+  transition: transform 500ms ease-in-out;
 }
 
 
 #closeButton.disappear{
-    transform: scale(0);
+  transform: scale(0);
 }

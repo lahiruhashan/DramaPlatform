@@ -6,13 +6,11 @@ button.addEventListener("click",showMenu,false);
 closeButton.addEventListener("click",showContent,false);
 
 function showMenu(e){
-   //pageContent.classList.add("show");
    loginSection.classList.add("showLog");
    closeButton.classList.remove("disappear");
 }
 
 function showContent(){
-  //pageContent.classList.remove("show");
   loginSection.classList.remove("showLog");
   closeButton.classList.add("disappear");
 }
@@ -21,10 +19,11 @@ function showContent(){
 $(document).on("click", "#loginButton", function() {
     var name = $('#username').val();
     var pass = $('#password').val();
+    console.log(pass);
     $.post("Login", {username : name , password: pass},function(response) {
         console.log(response);
         if(response == "match"){
-            window.location.href = "welcome.jsp";
+            window.location.href = "home-member.jsp";
         }else if (response == name){
             $("#password-notify").css("display","flex").addClass("is-active");
         }else{

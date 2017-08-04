@@ -38,8 +38,6 @@ public class Login extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-
-
         try {
             st = con.createStatement();
             String query = "select * from user";
@@ -52,13 +50,13 @@ public class Login extends HttpServlet {
 
                 String un = rs.getString("username");
                 String pw = rs.getString("password");
-
+                String firstName = rs.getString("firstName");
 
                 if (username.equals(un)) {
-                    if (password.equals(pw)) {
 
+                    if (password.equals(pw)) {
                         HttpSession session = request.getSession();
-                        session.setAttribute("user", username);
+                        session.setAttribute("user", firstName);
 
                         response.getWriter().write("match");
                     }else{
@@ -67,6 +65,7 @@ public class Login extends HttpServlet {
                 } else {
                     response.getWriter().write("none");
                 }
+
             }
 
         } catch (Exception ex) {

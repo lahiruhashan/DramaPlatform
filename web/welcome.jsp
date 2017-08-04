@@ -17,7 +17,7 @@
         response.sendRedirect("index.jsp");
     }
 %>
-<h1>Welcome ${user}</h1>
+<h1>Welcome ${user} ...</h1>
 
 <form action="Logout" method="post">
     <input type="submit" value="Logout">

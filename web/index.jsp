@@ -6,11 +6,12 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!Doctype html>
+<!DOCTYPE html>
 <head>
 
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/index-menu.css">
+  <link rel="stylesheet" type="text/css" href="css/toggler.css">
 
 </head>
 <body>
@@ -34,12 +35,12 @@
         <div class="content-left">
           <div class="strip">
             <section class="quote">
-            <p >Let yourself live between</p>
-            <p> Reality and </p>
-            <p> Theater... </p>
+              <p >Let yourself live between</p>
+              <p> Reality and </p>
+              <p> Theater... </p>
             </section>
             <section class="welcome-text">
-            <p >Welcome to the Latest Drama Experience. </p>
+              <p >Welcome to the Latest Drama Experience. </p>
             </section>
             <div class="signUp" id="signUp">Sign Up </div>
           </div>
@@ -94,7 +95,7 @@
         </div>
         <div class="title">Welcome Back !</div>
       </div>
-      <form action="" method="post" id="loginForm">
+      <form method="get" id="loginForm">
         <div class="loginDetail">
           <div class="username-wrap">
             <div class="username">
@@ -104,7 +105,7 @@
           </div>
           <div class="password-wrap">
             <div class="password">
-              <input type="password" id="password" class="passwordInput" name="password" placeholder="Your password">
+              <input type="password" class="passwordInput" id="password" name="password" placeholder="Your password">
             </div>
             <div class="password-notify" id="password-notify"><p class="text-invalid"> Invalid Password </p></div>
           </div>
@@ -118,9 +119,8 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/welcome.js"></script>
 
 </body>
 </html>
+
